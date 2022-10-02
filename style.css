@@ -45,6 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .calculator .display {
@@ -53,9 +54,11 @@ body {
   display: flex;
   justify-content: flex-end;
   /* align-items: flex-end; */
-  padding: 1rem;
+  padding: 1.5rem;
   font-family: "Orbitron", sans-serif;
   grid-area: display;
+  cursor: auto;
+  overflow: hidden;
 }
 
 .btn-ac {
@@ -124,4 +127,23 @@ body {
   right: 400px;
   border-radius: 50%;
   z-index: 1;
+}
+
+.prank {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(10px);
+  }
+  50% {
+    transform: translate(-10px);
+  }
+  75% {
+    transform: translate(10px);
+  }
+  100% {
+    transform: translate(-10px);
+  }
 }

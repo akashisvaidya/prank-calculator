@@ -20,7 +20,7 @@ body {
   backdrop-filter: blur(5px);
   border-radius: 10px;
   width: 400px;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.6rem;
   position: relative;
   z-index: 99;
 
